@@ -1,8 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ohrana_truda_1">
+    package="com.flutterflow.ohranatruda2"
+    xmlns:tools="http://schemas.android.com/tools">
+   <uses-permission android:name="android.permission.INTERNET"/>
+
    <application
-        android:label="ohrana_truda_1"
-        android:icon="@mipmap/ic_launcher">
+        android:label="ohrana_truda_2"
+        tools:replace="android:label"
+        android:icon="@mipmap/ic_launcher"
+        android:requestLegacyExternalStorage="true">
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -32,10 +38,14 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+
+
     </application>
 </manifest>

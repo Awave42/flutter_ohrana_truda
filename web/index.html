@@ -20,13 +20,13 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="ohrana_truda_1">
+  <meta name="apple-mobile-web-app-title" content="ohrana_truda_2">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>ohrana_truda_1</title>
+  <title>ohrana_truda_2</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -40,6 +40,25 @@
       });
     }
   </script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
+
+  <script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyDbPuXexZ5KMSborfUvjRZdd1BJEHilBIg",
+    authDomain: "ohranatruda-192cb.firebaseapp.com",
+    projectId: "ohranatruda-192cb",
+    storageBucket: "ohranatruda-192cb.appspot.com",
+    messagingSenderId: "204492643808",
+    appId: "1:204492643808:web:5b432cc29fa75357559f85",
+    measurementId: "G-GVBD3751R9"
+  }
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
